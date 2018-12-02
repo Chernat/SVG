@@ -1,0 +1,56 @@
+.button {
+
+  &__border {
+    cursor: pointer;
+    stroke: #fe0067;
+    stroke-width: 5px;
+    fill: white;
+    z-index: 2;
+    border-radius: 20px;
+
+    &--purple {
+      stroke: #5E35B1;
+    }
+  }
+
+  &__text {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    fill: #fe0067;
+    letter-spacing: 2px;
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--purple {
+      fill: #5E35B1;
+    }
+  }
+
+  &__hover {
+    cursor: pointer;
+    fill: #fe0067;
+    fill-opacity: 0.6;
+    transition: all 1.2s;
+
+    &--purple {
+      fill: #5E35B1;
+    }
+  }
+
+  &__btn {
+    &:hover {
+      & .button__hover {
+        x: 2px;
+        width: 396px;
+        fill-opacity: 1;
+      }
+
+      & .button__text  {
+        fill: white;
+      }
+    }
+  }
+}

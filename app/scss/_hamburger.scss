@@ -1,0 +1,28 @@
+.hamburger {
+
+  &__line {
+    transition: 0.5s;
+  }
+
+  &:hover {
+
+    & .hamburger__line {
+
+      &--top {
+        transform-origin: 60%;
+        transform: rotate(-45deg);
+      }
+
+      &--center {
+        transform-origin: 60%;
+        transform: rotate(-45deg);
+        y: 220;
+      }
+
+      &--bottom {
+        transform-origin: 65%;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
