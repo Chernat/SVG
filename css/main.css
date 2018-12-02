@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.container--btn {
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .simpson {
+    width: 300px;
+    height: 187px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .simpson {
+    width: 620px;
+    height: 387px;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  .simpson {
+    width: 620px;
+    height: 387px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1799px) {
+  .simpson {
+    width: 620px;
+    height: 387px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .simpson {
+    width: 620px;
+    height: 387px;
+  }
+}
+
+.hamburger__line {
+  transition: 0.5s;
+}
+
+.hamburger:hover .hamburger__line--top {
+  transform-origin: 60%;
+  transform: rotate(-45deg);
+}
+
+.hamburger:hover .hamburger__line--center {
+  transform-origin: 60%;
+  transform: rotate(-45deg);
+  y: 220;
+}
+
+.hamburger:hover .hamburger__line--bottom {
+  transform-origin: 65%;
+  transform: rotate(45deg);
+}
+
+.button__border {
+  cursor: pointer;
+  stroke: #fe0067;
+  stroke-width: 5px;
+  fill: white;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+.button__border--purple {
+  stroke: #5E35B1;
+}
+
+.button__text {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  fill: #fe0067;
+  letter-spacing: 2px;
+}
+
+.button__text:hover {
+  cursor: pointer;
+}
+
+.button__text--purple {
+  fill: #5E35B1;
+}
+
+.button__hover {
+  cursor: pointer;
+  fill: #fe0067;
+  fill-opacity: 0.6;
+  transition: all 1.2s;
+}
+
+.button__hover--purple {
+  fill: #5E35B1;
+}
+
+.button__btn:hover .button__hover {
+  x: 2px;
+  width: 396px;
+  fill-opacity: 1;
+}
+
+.button__btn:hover .button__text {
+  fill: white;
+}
